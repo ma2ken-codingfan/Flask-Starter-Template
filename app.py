@@ -1,5 +1,5 @@
 import os
-from flask import Flask, Blueprint, render_template, url_for
+from flask import Blueprint, render_template, url_for, request, Markup
 
 # modules  はディレクトリ名 importはファイル名
 from modules.about.views import about

@@ -9,14 +9,36 @@
 ## install
 
 ```
+# start venv
+
 python -m venv venv
 . venv/Script/activarte
 
+# module install
 pip install -U pip
 
 pip install Flask
 pip install SQLAlchemy flask-sqlalchemy
+
+# stop venv
+
+deactivate
+
+# start server
+
+python run.py
+
+# browser
+
+localhost:8888
+
+# stop server
+## keybord
+
+ctrl + c
+
 ```
+
 
 
 
@@ -27,8 +49,6 @@ pip install SQLAlchemy flask-sqlalchemy
 
 import os
 from flask import Blueprint, render_template, url_for, request, Markup
-
-import pyperclip
 
 
 blogform = Blueprint('blogform', __name__, template_folder='templates',
