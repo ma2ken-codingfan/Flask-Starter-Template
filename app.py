@@ -1,5 +1,5 @@
 import os
-from flask import Blueprint, render_template, url_for, request, Markup
+from flask import Flask, Blueprint, render_template, url_for, request, Markup
 
 # from is dedirectory　+ fielname (modules/blogform/views.py) | import is variable
 from modules.about.views import about
