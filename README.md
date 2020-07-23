@@ -51,26 +51,26 @@ import os
 from flask import Blueprint, render_template, url_for, request, Markup
 
 
-blogform = Blueprint('blogform', __name__, template_folder='templates',
-                     url_prefix='/blogform') # 変数 blogfomと@blogform が同じであること
+about = Blueprint('about', __name__, template_folder='templates',
+                     url_prefix='/about') # 変数 blogfomと@blogform が同じであること
 
-@blogform.route('/', methods=["POST", "GET"])
+@about.route('/', methods=["POST", "GET"])
 def index():
-    title = "blogform"
-    return render_template('blogform/index.html', title=title)
+    title = "about"
+    return render_template('about/index.html', title=title)
 
-# url_for('blogform.index') になる
+# link   url_for('about.index')
 
 # app.py
-# from はディレクトリ名　+ ファイル名 (modules/blogform/views.py)importは 変数名
+# from dedirectory　+ fielname (modules/blogform/views.py) import は variable
 from modules.blogform.views import blogform
 from modules.database.views import database
 
 # blueprint の分割templates配下はその親ディレクトリを作りそこにhtmlファイルを入れる
-# 親ファイルが　databaseの場合 templates/database/index.html
-# render_template('dabase.html')
-# url_for('database.index') このindexは　indexファイルではなくdatabaseの
-# def index() 関数名変えた場合　def hoge() => url_for('database.hoge')
+# 親ファイルが　aboutの場合 templates/about/index.html
+# render_template('about/index.html')
+# url_for('about.index') このindexは　indexファイルではなくblueprintの index()
+# def index() 関数名変えた場合　def hoge() => url_for('hoge.hoge')
 
 ```
 
