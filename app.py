@@ -1,7 +1,7 @@
 import os
 from flask import Blueprint, render_template, url_for, request, Markup
 
-# modules  はディレクトリ名 importはファイル名
+# from is dedirectory　+ fielname (modules/blogform/views.py) | import is variable
 from modules.about.views import about
 from modules.profile.views import profile
 

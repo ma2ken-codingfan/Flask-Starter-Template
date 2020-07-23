@@ -63,7 +63,7 @@ def index():
 # link   url_for('about.index')
 
 # app.py
-# from dedirectory　+ fielname (modules/blogform/views.py) import は variable
+# from is dedirectory　+ fielname (modules/blogform/views.py) | import is variable
 from modules.blogform.views import blogform
 from modules.database.views import database
 
