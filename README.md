@@ -20,9 +20,6 @@ pip install -U pip
 pip install Flask
 pip install SQLAlchemy flask-sqlalchemy
 
-# stop venv
-
-deactivate
 
 # start server
 
@@ -36,6 +33,10 @@ localhost:8888
 ## keybord
 
 ctrl + c
+
+# stop venv
+
+deactivate
 
 ```
 
