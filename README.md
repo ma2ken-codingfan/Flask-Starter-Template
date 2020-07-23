@@ -1,4 +1,4 @@
-# Flask　template
+# Flask Starter Template
 
 ## url
 
